@@ -33,7 +33,7 @@ var friends = [
         "name":"Yoshi",
         "photo":"https://upload.wikimedia.org/wikipedia/en/3/39/YoshiMarioParty9.png",
         "scores":[]
-     }
+     },
      {
         "name":"Donkey Kong",
         "photo":"https://vignette.wikia.nocookie.net/vsbattles/images/9/90/SSB4_-_Donkey_Kong_Artwork.png/revision/latest?cb=20151116211323",
