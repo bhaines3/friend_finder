@@ -1,0 +1,32 @@
+body{
+    background-image: url(https://vignette.wikia.nocookie.net/diceblock/images/3/39/400th_deviation_special_super_mario_wallpaper_by_machriderz-d59pp7z.png/revision/latest?cb=20141007122520);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    background-color: firebrick;
+    color: rgb(32, 27, 27);
+    opacity: .90;
+    margin-top: 20px;
+}
+
+#submit {
+    background: firebrick;
+}
+
+#jumbo_h2 {
+    color: rgb(27, 19, 19);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.panel-title {
+    color: firebrick;
+}
