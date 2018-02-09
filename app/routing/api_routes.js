@@ -10,6 +10,7 @@ module.exports = function (app) {
     app.post('/api/friends', function (req, res) {
         // newFriend is the user that filled out the survey
         var newFriend = req.body;
+        console.log(newFriend)
   
         // compute best match from scores
         var bestMatch = {};

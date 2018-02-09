@@ -197,25 +197,25 @@
     <script src="https://use.fontawesome.com/0bf9ac1b8c.js"></script>
 
      <!-- jQuery Reference -->
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
 // Grab the URL of the website
-var currentURL = window.location.origin;
+// var currentURL = window.location.origin;
 // Capture the form inputs
-$("#submit").on("click", function(){
-  //event.preventDefault();
+$("#submit").on("click", function(event){
+  event.preventDefault();
     if( ($('#name').val().trim() !== "") && ($('#photo').val().trim() !== "") ) {
         // Create an object for the user's data
         var userData = {
             name: $("#name").val(),
             photo: $("#photo").val(),
-            scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
+            scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         }
         // AJAX post the data to the friends API.
-        $.post(currentURL + "/api/friends", userData, function(data){
+        $.post("/api/friends", userData, function(data){
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#matchName").text(data.name);
           $('#matchImg').attr("src", data.photo);
