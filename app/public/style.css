@@ -1,24 +1,25 @@
 body{
-    background-image: url(https://vignette.wikia.nocookie.net/diceblock/images/3/39/400th_deviation_special_super_mario_wallpaper_by_machriderz-d59pp7z.png/revision/latest?cb=20141007122520);
+    background-image: url("https://wallup.net/wp-content/uploads/2016/01/225225-Mario_Bros.-Luigi-Princess_Peach-Yoshi-Wario-Donkey_Kong-Toad_character-video_games-Nintendo-Mario_Kart_8.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+
 .jumbotron {
     background-color: firebrick;
-    color: rgb(32, 27, 27);
+    color: rgb(223, 217, 217);
     opacity: .90;
     margin-top: 20px;
 }
 
-#submit {
+/* #submit {
     background: firebrick;
-}
+} */
 
 #jumbo_h2 {
-    color: rgb(27, 19, 19);
+    color: rgb(219, 210, 210);
 }
 
 .btn-primary {
@@ -27,6 +28,29 @@ body{
     border-color: #2e6da4;
 }
 
-.panel-title {
-    color: firebrick;
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#footerBubble {
+    margin-top: 20px;
+}
+
+.thoughtBubbleButton {
+    text-align: center;
+}
+
+.card-body {
+    background: firebrick;
+    opacity: 0.90;
+}
+
+a {
+    color: whitesmoke;
+    text-align: center;
 }

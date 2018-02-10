@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Friends Page</title>
+    <title>Home Page</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,7 +24,6 @@
     <div class="container">
 
         <div class="jumbotron">
-            <!--<span class="glyphicon glyphicon-link"></span> -->
 
             <h1 class="text-center">Mario Friend Finder</h1>
             <hr>
@@ -38,12 +37,30 @@
 
         </div>
 
-    <footer class="footer">
+        <div class="row justify-content-center">
+        <footer class="footer">
+               <div class="wrapper text-center" id="footerBubble">
+                        <div class="collapse" id="thoughtBubble">
+                        <div class="card-body">
+                                
+                                <button class="btn btn-outline-danger text-right" type="button" data-toggle="collapse" data-target="#thoughtBubble" aria-expanded="false" aria-controls="thoughtBubble">       
+                                <div class="text-center text-light">© Copyright 2018 Brandon Haines | <a class= text-center href="https://github.com/bhaines3" target="_blank">GitHub</a> </div>     
+                                </button>
+                        </div>
+                        </div>
+                </div>
+        
+                <button class="btn btn-outline-danger helpButton" type="button" data-toggle="collapse" data-target="#thoughtBubble" aria-expanded="false" aria-controls="thoughtBubble">
+                &#9776
+                </button>
+        </footer>
+    </div>
+    <!-- <footer class="footer">
       <div class="container">
             <p class="bold"><a href="/api/friends">API Friends Link</a> |
             <a href="https://github.com/bhaines3/friend-finder" target="_blank">GitHub Repo</a></p>
       </div>
-    </footer>
+    </footer> -->
 
     </div>
 
